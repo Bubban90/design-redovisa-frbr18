@@ -21,8 +21,8 @@ Om
 
 Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
 
-Skriv några kloka ord om kursen?
+Markdown verkar intressant, vi får se var det tar mig. 
 
-Lägg till en representativ bild för kursen, enligt ditt egna val.
+[GitHubRepo](https://github.com/Bubban90/Javascript-redovisa)
 
-[FIGURE src=image/car.png?w=300 caption="En fin bil som demobild."]
+[FIGURE src=image/md.jpg?w=300 caption="En fin bil som demobild."]
