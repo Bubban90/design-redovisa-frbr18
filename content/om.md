@@ -23,6 +23,7 @@ Detta innehåll är skrivet i markdown och du hittar innehållet i filen `conten
 
 Markdown verkar intressant, vi får se var det tar mig. 
 
-[GitHubRepo](https://github.com/Bubban90/Javascript-redovisa)
+[GitHubRepo](https://github.com/frbr18)
+[GitHubMe](https://github.com/frbr18/design-redovisa-frbr18)
 
 [FIGURE src=image/md.jpg?w=300 caption="En fin bil som demobild."]
