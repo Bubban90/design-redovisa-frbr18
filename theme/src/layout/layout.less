@@ -1,0 +1,49 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+
+/**
+ * General layout
+ */
+@import "header.less";
+@import "footer.less";
+
+.inner-wrap {
+    margin: 0 auto;
+}
+
+.outer-wrap-main {
+    overflow: auto;
+    min-height: 600px
+}
+
+.region-main {
+    width: 100%;
+}
+
+.region-main {
+    width: 100%;
+    float: left;
+    &.has-sidebar{
+        width: 70%;
+    }
+}
+
+.region-sidebar-right, .region-sidebar-left {
+    width: 30%;
+    float: left;
+}
+
+.article {
+    overflow: auto;
+}
+
+.right {
+    float: right;
+}

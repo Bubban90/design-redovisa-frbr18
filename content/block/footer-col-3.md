@@ -1,3 +1,4 @@
-#### Footer col 3
+#### Något bra att ha
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Brödrost
+bandspelare
