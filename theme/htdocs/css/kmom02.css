@@ -73,7 +73,6 @@ body {
  * General layout for the footer
  */
 .region-footer {
-  background-color: #424242;
   color: white;
   text-align: center;
 }
@@ -84,12 +83,21 @@ body {
   float: left;
   width: 33%;
 }
+.outer-wrap-footer {
+  background-color: #424242;
+}
 .inner-wrap {
   margin: 0 auto;
 }
 .outer-wrap-main {
   overflow: auto;
   min-height: 600px;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.outer-wrap-breadcrumb {
+  max-width: 1120px;
+  margin: 0 auto;
 }
 .region-main {
   width: 100%;
