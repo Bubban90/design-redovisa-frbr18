@@ -473,6 +473,9 @@ hr::after {
   float: left;
   margin: auto;
 }
+.figur-rapport {
+  margin: 0;
+}
 .row {
   display: block;
   width: 101.04166667%;
@@ -513,6 +516,8 @@ hr::after {
   overflow: auto;
 }
 .outer-wrap-main {
+  background-color: white;
+  color: black;
   min-height: 600px;
   border-bottom: #03B4FF solid 4px;
 }
@@ -4663,6 +4668,12 @@ hr::after {
 }
 .fab {
   font-family: 'Font Awesome 5 Brands';
+}
+@font-face {
+  font-family: 'Bungee';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bungee'), local('Bungee-Regular'), url(https://fonts.gstatic.com/s/bungee/v3/N0bU2SZBIuF2PU_0DXRw.ttf) format('truetype');
 }
 /**
  * A responsive menu.

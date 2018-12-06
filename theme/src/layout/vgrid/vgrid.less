@@ -3,25 +3,37 @@
  * and other regions of the page including route specific styles.
  */
 
+/* Imports */
+@import "header.less";
+@import "footer.less";
+
 /**
  * Variables
  */
- @colorFooter: #424242;
+ @colorFooter: #333;
  @colorHeader: #333;
+ @borderColor: #03B4FF;
 
 /**
  * General layout
  */
 
+.right {
+    float: right;
+    margin: 0;
+}
 
+.left {
+    float: left;
+    margin: auto;
+}
  
 .row {
     #desinax-vgrid.row();
-
+    width: 100%;
     //background-color: #0f0;
     margin-bottom: 12px;
 }
-
 
 .inner-wrap {
     //margin: 0 auto;
@@ -37,27 +49,22 @@
         #desinax-vgrid.showGrid(@gridImage);
     }
 }
- 
+
+.article {
+    overflow: auto;
+}
 .outer-wrap-main {
     min-height: 600px;
-    //max-width: 1120px;
-    //margin: 0 auto;
+    border-bottom: @borderColor solid 4px;
 }
  
 .outer-wrap-breadcrumb {
     display: none;
-    //max-width: 1120px;
-    //margin: 0 auto;
- }
- 
- .region-main {
-    //width: 100%;
  }
  
 .region-main {
+    min-height: 800px;
     #desinax-vgrid.column(@columns);
-    //width: 100%;
-    //float: left;
     &.has-sidebar{
         #desinax-vgrid.column(@columns * 3 / 4);
     }
@@ -69,66 +76,22 @@
     //float: left;
 }
 
- /**
-  * General layout for the header
-  */
-
-
-
-.inner-wrap-header {
-    #desinax-vgrid.grid(100%);
-    //width: 100%;
-    background-color: @colorHeader;
-    height: 56px;
-}
-
-.outer-wrap-header {
-    background-color: @colorBody;
-}
-.region-header-col-1 {
-    display: none;
-    //width: 0%;
-    //float: left;
-}
-
-.region-header-col-2 {
-    #desinax-vgrid.column(20);
-    #desinax-vgrid.push(5);
-    //width: 80%;
-    //float: left
-}
-.region-header-col-3 {
-    #desinax-vgrid.column(4);
-    //width: 20%;
-    //float: left;
-}
-
-.rm-navbar ul {
-    color: white;
-}
-
-.rm-navbar ul li ul {
-    background-color: @colorHeader;
-}
-
-.outer-wrap-flash {
-    display: none;
-}
+ 
 /**
  * General layout for the region breadcrumb
  */
  
- .region-breadcrumb {
+.region-breadcrumb {
     #desinax-vgrid.column(@columns);
  }
 
- 
+
 
  /**
  * General layout for the region side-bar left
  */
 
- .toc ul, .breadcrumb-list ul {
+.toc ul, .breadcrumb-list ul {
     list-style-type: none;
     padding-left: 0;
 }
@@ -151,31 +114,7 @@
     float: left;
 }
 
-/**
- * General layout for the footer
- */
-.region-footer {
-    color: white;
-    //text-align: center;
-}
 
-.footer-column-wrapper {
-    //width: 100%;
-}
-
-.footer-column {
-    #desinax-vgrid.column(@columns / 3);
-    //float: left;
-    //width: 33%;
-}
-
-.outer-wrap-footer {
-    background-color: @colorFooter;
-}
-
-.site-footer {
-    #desinax-vgrid.column(@columns);
-}
 
 
 /* Responsive */

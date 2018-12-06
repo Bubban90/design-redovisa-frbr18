@@ -26,7 +26,7 @@ body {
   padding: 0;
   color: #333;
   background-color: #fff;
-  font: 16px/1.375 MyriadPro-Regular, "Myriad Pro Regular", MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+  font: 16px/1.375 'Roboto', sans-serif;
 }
 h1,
 h2,
@@ -34,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", Georgia, "Times New Roman", Times, serif;
+  font-family: 'Roboto', sans-serif;
   margin-top: 22px;
   margin-bottom: 22px;
 }
@@ -158,7 +158,7 @@ code,
 kbd,
 samp,
 .code {
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Roboto', sans-serif;
 }
 code,
 samp {
@@ -389,14 +389,14 @@ hr::after {
   margin-right: auto;
   margin-left: auto;
   max-width: 100%;
-  background-color: #333;
+  background-color: #eee;
   height: 56px;
   max-width: 1100px;
 }
 .outer-wrap-header {
-  background-color: #333;
-  border-bottom: #03B4FF solid 4px;
-  box-shadow: #333 0px 1px 3px;
+  background-color: #eee;
+  border-bottom: #009C78 solid 4px;
+  box-shadow: #eee 0px 1px 3px;
 }
 .region-header-col-1 {
   display: inline;
@@ -423,10 +423,10 @@ hr::after {
   margin-right: 0.52083333%;
 }
 .rm-navbar ul {
-  color: #03B4FF;
+  color: #009C78;
 }
 .rm-navbar ul li ul {
-  background-color: #333;
+  background-color: #eee;
 }
 .outer-wrap-flash {
   display: none;
@@ -435,7 +435,7 @@ hr::after {
  * General layout for the footer
  */
 .region-footer {
-  color: #03B4FF;
+  color: #009C78;
 }
 .footer-column {
   display: inline;
@@ -445,8 +445,8 @@ hr::after {
   margin-right: 0.52083333%;
 }
 .outer-wrap-footer {
-  background-color: #333;
-  box-shadow: #333 0px -2px 2px;
+  background-color: #eee;
+  box-shadow: #eee 0px -2px 2px;
   overflow: auto;
 }
 .site-footer {
@@ -472,6 +472,9 @@ hr::after {
 .left {
   float: left;
   margin: auto;
+}
+.figur-rapport {
+  margin: 0;
 }
 .row {
   display: block;
@@ -513,8 +516,10 @@ hr::after {
   overflow: auto;
 }
 .outer-wrap-main {
+  background-color: white;
+  color: black;
   min-height: 600px;
-  border-bottom: #03B4FF solid 4px;
+  border-bottom: #009C78 solid 4px;
 }
 .outer-wrap-breadcrumb {
   display: none;
@@ -563,7 +568,7 @@ hr::after {
 .toc li a,
 .breadcrumb-list li a {
   text-decoration: none;
-  color: #333;
+  color: #eee;
 }
 .toc li a:hover,
 .breadcrumb-list li a:hover {
@@ -4663,6 +4668,12 @@ hr::after {
 }
 .fab {
   font-family: 'Font Awesome 5 Brands';
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
 /**
  * A responsive menu.
