@@ -25,7 +25,7 @@ return [
     ],
     [
         "text" => "Rapport",
-        "url" => "rapport",
+        "url" => "rapport/rapport",
         "title" => "A rapport.",
-    ]
+    ],
 ];

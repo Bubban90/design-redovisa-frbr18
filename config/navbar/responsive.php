@@ -31,6 +31,26 @@ return [
                         "url" => "redovisning/kmom02",
                         "title" => "Redovisning för kmom02.",
                     ],
+                    [
+                        "text" => "Kmom03",
+                        "url" => "redovisning/kmom03",
+                        "title" => "Redovisning för kmom03.",
+                    ],
+                    [
+                        "text" => "Kmom04",
+                        "url" => "redovisning/kmom04",
+                        "title" => "Redovisning för kmom04.",
+                    ],
+                    [
+                        "text" => "kmom05",
+                        "url" => "redovisning/kmom05",
+                        "title" => "Redovisning för kmom05.",
+                    ],
+                    [
+                        "text" => "kmom06",
+                        "url" => "redovisning/Kmom06",
+                        "title" => "Redovisning för Kmom06.",
+                    ],
                 ],
             ],
         ],
@@ -53,6 +73,25 @@ return [
             "text" => "Test",
             "url" => "test",
             "title" => "Testa lite olika markdown saker",
+        ],
+        [
+            "text" => "Rapporter",
+            "url" => "rapport",
+            "title" => "Redovisningstexter från kursmomenten.",
+            "submenu" => [
+                "items" => [
+                    [
+                        "text" => "Färgchhema",
+                        "url" => "rapport/rapport",
+                        "title" => "Färgschema.",
+                    ],
+                    [
+                        "text" => "Bilder",
+                        "url" => "rapport/rapport_bild",
+                        "title" => "Bild analys.",
+                    ],
+                ],
+            ],
         ],
     ],
 ];

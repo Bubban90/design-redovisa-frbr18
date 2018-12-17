@@ -1,0 +1,165 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/* Imports */
+@import "header.less";
+@import "footer.less";
+
+/**
+ * Variables
+ */
+ @colorFooter: #333;
+ @colorHeader: #333;
+ @borderColor: #03B4FF;
+ @fontColor: black;
+ @backgroundColor: white;
+
+/**
+ * General layout
+ */
+
+.right {
+    float: right;
+    margin: 0;
+}
+
+.left {
+    float: left;
+    margin: auto;
+}
+
+.figur-rapport {
+    margin: 0;
+}
+
+.rapport-img a img {
+    width: 100%;
+}
+
+.blogg-img {
+    margin: 0;
+}
+
+.width-hundra a img {
+    width: 100%;
+}
+ 
+.row {
+    #desinax-vgrid.row();
+    width: 100%;
+    //background-color: #0f0;
+    margin-bottom: 12px;
+}
+
+.inner-wrap {
+    //margin: 0 auto;
+    #desinax-vgrid.grid(1100px);
+}
+
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    //@gridImage: "../../img/grid_12x60x20-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, 1100px);
+
+    &.inner-wrap-header {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+.article {
+    overflow: auto;
+}
+.outer-wrap-main {
+    background-color: @backgroundColor;
+    color: @fontColor;
+    min-height: 600px;
+    border-bottom: @borderColor solid 4px;
+}
+ 
+.outer-wrap-breadcrumb {
+    display: none;
+ }
+ 
+.region-main {
+    min-height: 800px;
+    #desinax-vgrid.column(@columns);
+    &.has-sidebar{
+        #desinax-vgrid.column(@columns * 3 / 4);
+    }
+}
+ 
+.region-sidebar-right, .region-sidebar-left {
+    #desinax-vgrid.column(6);
+    //width: 30%;
+    //float: left;
+}
+
+ 
+/**
+ * General layout for the region breadcrumb
+ */
+ 
+.region-breadcrumb {
+    #desinax-vgrid.column(@columns);
+ }
+
+
+
+ /**
+ * General layout for the region side-bar left
+ */
+
+.toc ul, .breadcrumb-list ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.toc li a, .breadcrumb-list li a {
+    text-decoration: none;
+    color: @colorHeader;
+}
+
+.toc li a:hover, .breadcrumb-list li a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.next {
+    float: right;
+}
+
+.previous {
+    float: left;
+}
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    .region-main {
+        #desinax-vgrid.column(@columns);
+
+        &.has-sidebar{
+            #desinax-vgrid.column(@columns);
+        }
+    }
+
+    .region-sidebar-right, .region-sidebar-left {
+        #desinax-vgrid.column(@columns);
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .inner-wrap-header {
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .footer-column {
+        #desinax-vgrid.column(@columns);
+    }
+}

@@ -1,0 +1,44 @@
+/**
+  * General layout for the header
+  */
+
+.inner-wrap-header {
+    #desinax-vgrid.grid(100%);
+    background-color: @colorHeader;
+    height: 56px;
+    max-width: 1100px;
+}
+
+.outer-wrap-header {
+    background-color: @colorHeader;
+    border-bottom: @borderColor solid 4px;
+    box-shadow: @colorHeader 0px 1px 3px;
+}
+
+.region-header-col-1 {
+    #desinax-vgrid.column(0);
+}
+
+.region-header-col-1 span{
+    display: none;
+}
+
+.region-header-col-2 {
+    #desinax-vgrid.column(20);
+}
+
+.region-header-col-3 {
+    #desinax-vgrid.column(4);
+}
+
+.rm-navbar ul {
+    color: @borderColor;
+}
+
+.rm-navbar ul li ul {
+    background-color: @colorHeader;
+}
+
+.outer-wrap-flash {
+    display: none;
+}
