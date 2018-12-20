@@ -90,6 +90,21 @@ return [
                         "url" => "rapport/rapport_bild",
                         "title" => "Bild analys.",
                     ],
+                    [
+                        "text" => "Design principer",
+                        "url" => "rapport/designprincip_06",
+                        "title" => "Bild analys.",
+                    ],
+                    [
+                        "text" => "Design Elements",
+                        "url" => "rapport/designelements_07",
+                        "title" => "elementsTest.",
+                    ],
+                    [
+                        "text" => "Design Principer",
+                        "url" => "rapport/designprinciper_08",
+                        "title" => "principer.",
+                    ],
                 ],
             ],
         ],

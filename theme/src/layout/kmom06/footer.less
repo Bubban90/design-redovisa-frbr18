@@ -1,0 +1,24 @@
+/**
+ * General layout for the footer
+ */
+ .region-footer {
+    color: @borderColor;
+}
+
+.footer-column {
+    #desinax-vgrid.column(@columns / 3);
+}
+
+.outer-wrap-footer {
+    background-color: @colorFooter;
+    box-shadow: @colorFooter 0px -2px 2px;
+    overflow: auto;
+}
+
+.site-footer {
+    #desinax-vgrid.column(@columns);
+}
+
+.footer-column h5 {
+    border-bottom: none;
+}
